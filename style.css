@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-1: #201E43;
+  --color-2: #134B70;
+  --color-3: #508C9B;
+  --color-4: #EEEEEE
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-1);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#container {
+  width: 100%;
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.navigasi {
+  width: 15%;
+  height: 100vh;
+  background-color: var(--color-1);
+  position: fixed;
+  /* visibility: hidden; */
+}
+
+.profile-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.profile-wrapper > img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  position: relative;
+}
+
+.profile-wrapper > p {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  padding: 0.5em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25em;
+}
+
+.konten-utama {
+  width: 85%;
+  min-height: 100vh;
+  background-color: var(--color-3);
+  margin-left: 15%;
+}
