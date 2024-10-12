@@ -14,6 +14,6 @@ const preloader = document.getElementById('preloader')
 const container = document.getElementById('container')
 
 window.addEventListener('load', function() {
-  container.style.display = 'block'
+  container.style.display = 'flex'
   preloader.style.display = 'none'
 })
