@@ -6,6 +6,7 @@
     <title>Chico Endar Adikara - Web Portofolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <div id="preloader">
@@ -16,7 +17,7 @@
     <div id="container">
       <div class="navigasi">
         <div class="profile-wrapper">
-          <p>KYLIAN MBAPPE</p>
+          <p>CHICO ENDAR A.</p>
           <img
             src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape%2Fcover%2Fsport%2F722b81b1a8c444ee9953559eebd8888c6c8a3eeb48cffedc833c44cf7c9b0bd5.jpg"
             alt=""
@@ -44,11 +45,24 @@
 
       <div class="konten-utama">
         <div id="beranda">
-          <h3>Halo, perkenalkan saya</h3>
-          <h3>Chico Endar Adikara</h3>
+          <div class="intro-wrapper">
+            <h3>Halo, Perkenalkan Saya</h3>
+            <div class="nama-wrapper">
+              <span></span>
+            </div>
+          </div>
+          <img src="/assets/mbappe.png" alt="">
         </div>
       </div>
     </div>
+    <script>
+      new Typed('.nama-wrapper span', {
+      strings: ['Chico Endar Adikara'],
+      typeSpeed: 100,
+      backSpeed: 20,
+      loop: true
+    });
+    </script>
 
     <script src="/script.js"></script>
   </body>
