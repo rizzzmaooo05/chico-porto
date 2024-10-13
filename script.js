@@ -12,9 +12,20 @@ const html = document.querySelector('html')
 const rootFontSize = Math.floor(clientWidth / 80)
 html.style.fontSize = rootFontSize.toString() + 'px'
 
-// const navigasi = document.getElementById('navigasi')
-// navigasi.style.width = (0.2 * clientWidth).toString() + 'px'
+function getValue(elementID) {
+  const value = document.getElementById(elementID).value
+  return value
+}
 
-// const container = document.getElementById('container')
-// container.style.width = (0.8 * clientWidth).toString() + 'px'
-// container.style.marginLeft = navigasi.style.width
+const kirim = document.getElementById('kirim')
+kirim.addEventListener('click', function() {
+  const nama = getValue('nama')
+  const email = getValue('email')
+  const pesan = getValue('pesan')
+
+  if(!nama) return ''
+  if(!email) return ''
+  if(!pesan) return ''
+
+  window.location.href = `http://wa.me/6285641025159?text=Nama:%20${nama}%0AEmail:%20${email}%0APesan:%20${pesan}`
+})
